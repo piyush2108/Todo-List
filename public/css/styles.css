@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: white;   
+}
+
+span{
+    background-image: linear-gradient(45deg, rgb(215, 26, 26), rgb(36, 36, 214));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Header Section */
+header{
+    margin: 0;
+}
+
+.header .container{
+    margin: 2% 8%;
+    padding: 2rem;
+}
+
+#heading{
+    margin: 0 2% 2% 0;
+    width: fit-content;
+    background-image: linear-gradient(45deg, rgb(36, 36, 214), rgb(215, 26, 26));
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Secular One', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: transparent;
+}
+
+#date{
+    margin-top: 4%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5rem;
+}
+
+
+#errorMsg{
+    margin-top: 4%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: rgb(210, 20, 20);
+}
+
+/* List Section */
+.main-area{
+    margin: 0;
+}
+
+.main-area .container{
+    margin: 2% auto;
+    padding: 2rem;
+    width: 70%;
+    text-align: center;
+    background: #1b1b1b;
+    border-radius: 30px;
+}
+
+.btn{
+    width: max-content;
+    padding: 1% 2%;
+    background-color: #000  ;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #0c0c0c;
+}
+
+.btn-red{
+    color: #fff;
+    border-bottom: 3px solid rgb(210, 20, 20);
+}
+
+.btn-blue{
+    color: #fff;
+    border-bottom: 3px solid rgb(36, 36, 214);
+}
+
+#new-listItem{
+    width: 50%;
+    text-align: center;
+    background-color: #000;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+    color: #fff;
+    border-style: none;
+    border-radius: 20px;
+    border-bottom: 2px solid rgb(36, 36, 214);
+    border-top: 2px solid rgb(210, 20, 20);
+}
+
+.list{
+    padding: 0;
+    height: fit-content;
+    list-style: none;
+    word-break: break-word;
+}
+
+.listItem{
+    margin: 2% auto 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+}
+
+.strike{
+    font-style: italic;
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #000;
+}
+
+/* Footer Section */
+footer{
+    margin: 5% auto 0;
+    text-align: center;
+}
+
+footer p{
+    padding: 4% auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}

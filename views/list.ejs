@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Patrick+Hand&family=Secular+One&display=swap" rel="stylesheet">
+
+    <title>ToDo List</title>
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <h1 id="heading">ToDo-List</h1>
+            <h1 id="date"><%= day %>, <span><%= month %> <%= date %></span>, <%= year %></h1>
+            <h2 id="errorMsg"><%= errorMsg %></h2>
+        </div>
+    </div>
+
+    <div class="main-area">
+        <div class="container">
+            <form action="/" method="post">
+                <button type="submit" value="addItem" name="myButton" class="btn btn-blue">+</button>
+                <input type="text" name="newItem" id="new-listItem" autocomplete="off">
+                <button type="submit" value="removeItem" name="myButton" class="btn btn-red">remove</button>
+            </form>
+            <ul class="list"> 
+                <% for(var i=0; i<newListItem.length; i++){ %>
+                    <li class="listItem" id="item"><%= newListItem[i] %></li>
+                <% } %>
+            </ul>       
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with 🤍by b1ngus</p>
+    </footer>
+
+</body>
+</html>
